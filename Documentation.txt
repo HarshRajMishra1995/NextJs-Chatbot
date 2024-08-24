@@ -1,0 +1,54 @@
+Setup and Installation Instructions
+
+1.Prerequisites :-
+ Node.js (v14 or higher)
+ npm (v6 or higher) or Yarn
+
+2.Steps to Set Up the Project :-
+
+ Clone the Repository:
+ git clone git@github.com:HarshRajMishra1995/NextJs-Chatbot.git
+ cd chatbot-app
+
+ Install Dependencies: If you're using npm:
+  npm install
+  
+  Or if you're using Yarn:
+  yarn install
+
+ Run the Development Server: Start the development server to see the application in action.
+  npm run dev
+  
+  Or:
+  yarn dev
+ Access the Application: Open your browser and navigate to http://localhost:3000. You should see the chatbot on the homepage, ready to interact.
+
+
+3.Project Structure and Key Components :-
+
+ chatbot-application/
+ │
+ ├── components/
+ │   ├── Chatbot.tsx          # Main chatbot component
+ │   ├── Errorboundary.tsx       # To handle UI Errors
+ │
+ ├── public/                  # Static assets like images or icons
+ ├── public/images            # Static assets like images or icons
+ ├── styles/
+ │   └── globals.css          # Global CSS file (import Tailwind here)
+ │
+ ├── tailwind.config.js       # Tailwind CSS configuration file
+ ├── tsconfig.json            # TypeScript configuration file
+ └── next.config.js           # Next.js configuration file
+
+4.Assumptions and Limitations
+ Assumptions:-
+  Static Data: The chatbot currently uses static, predefined questions and answers. No backend or dynamic data fetching is implemented.
+  Simple Matching Algorithm: The chatbot uses a basic algorithm to match user queries with predefined responses. This may result in limited accuracy.
+  Single Session State: The chat history is maintained only during the current session. If the page is refreshed, the chat history is lost.
+ Limitations:-
+  No Backend Integration: The application does not connect to any backend service or API. All logic is client-side.
+  Limited Query Handling: The chatbot can only handle a predefined set of questions. It does not support complex queries or natural language processing.
+  Basic UI/UX: The focus was on functionality and responsiveness. Advanced UI features, like animations or rich media in messages, are not implemented.
+
+
